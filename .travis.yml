@@ -3,6 +3,10 @@ language:
 
 before_install:
   - pip install --user cpp-coveralls
+  
+addons:
+  sonarcloud:
+    organization: "dmitry-creator"
 
 script:
   - qmake
